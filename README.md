@@ -28,3 +28,11 @@ training@ubuntu-devops:~/devops$ javac -sourcepath src -d build/classes src/oata
 training@ubuntu-devops:~/devops$ java -cp build/classes oata.HelloWorld
 Hello World
 ```
+
+### Creamos JAR
+
+```echo Main-Class: oata.HelloWorld>myManifest
+md build\jar
+jar cfm build\jar\HelloWorld.jar myManifest -C build\classes .
+java -jar build\jar\HelloWorld.jar
+```
