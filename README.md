@@ -31,7 +31,8 @@ Hello World
 
 ### Creamos JAR
 
-```echo Main-Class: oata.HelloWorld>myManifest
+```
+echo Main-Class: oata.HelloWorld>myManifest
 mkdir build/jar
 jar cfm build/jar/HelloWorld.jar myManifest -C build/classes .
 java -jar build/jar\HelloWorld.jar
